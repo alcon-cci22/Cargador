@@ -1,0 +1,135 @@
+:root {
+    /*  --primary-color: #68ddbd 
+    */
+      --primary-color: #0045ff;
+      --primary-color-light: #00d4ff;
+      --text-light: #cbd5e1;
+      --white: #ffffff;
+      --black: #000000;
+      --orange-secundary: #ff7c39;
+      --celeste: #62e3fe;
+      --blue: #0b42f4; 
+      --facebook: #3b5998;
+      --twitter: #050505;
+      --youtube: #c4302b;
+      --whatsapp: #05a837;
+      --instagram: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+      --fondo: #910202;
+    
+    }
+ .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeOut 1s ease-in-out 9s forwards;
+ }
+
+ .loader .social-icons {
+    display: flex;
+    gap: 1rem;
+ }
+ .loader .social-icons span {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite ease-in-out;
+ }
+
+.social-icons .facebook {
+    background-color: var(--facebook);
+}
+
+.social-icons .whatsapp {
+    background-color: var(--whatsapp);
+}
+
+.social-icons .youtube {
+    background-color: var(--youtube);   
+}
+
+.social-icons .twitter {
+    background-color: var(--twitter);
+}
+
+.social-icons .instagram {
+    background: var(--instagram);
+}
+
+.loader .social-icons span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader .social-icons span:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.loader .social-icons span:nth-child(4){
+    animation-delay: 0.6s;
+}
+.loader .social-icons span:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+.loader .social-icons span i {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader .social-icons span {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    animation: bounceRotate 1.5s infinite ease-in-out;
+}
+
+@keyframes bounceRotate {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+
+    }
+    50% {
+        transform: translateY(-20px) rotate(45deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
